@@ -1,1 +1,1 @@
-"this is your fortune"
+{fortune: @selected_fortune}
