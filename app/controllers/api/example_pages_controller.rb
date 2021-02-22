@@ -7,8 +7,9 @@ class Api::ExamplePagesController < ApplicationController
   end
   def lottery
     @all_numbers = []
-    p @all_numbers
-    
+    6.times do
+      @all_numbers << rand(1..60)
+    end
     render 'lottery.json.jb'
   end
 end
