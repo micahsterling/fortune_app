@@ -5,4 +5,10 @@ class Api::ExamplePagesController < ApplicationController
     @selected_fortune = fortune.sample
     render 'fortune_teller.json.jb'
   end
+  def lottery
+    @all_numbers = []
+    p @all_numbers
+    
+    render 'lottery.json.jb'
+  end
 end
